@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //добавляем действие для кнопки dobavlenie , метод "клик" и вызывается он точкой
+        //$ - это пустая переменная ?!
+        $("dobavlenie").click(
+            function () {
+                $("ul:first").after("<ul> <li> <label> number </label> </li> </ul>");
+            }
+        );
+    })
+
+
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 1</title>
+</head>
+<body>
+<H6> Listing data...</H6>
+<button id="dobavlenie" > plus </button>
+<button id="udalenie" > minus </button>
+
+<ul>
+    <Li> 1 </Li>
+    <Li> 2 </Li>
+    <Li> 3 </Li>
+    <Li> 4 </Li>
+
+</ul>
+
+</body>
+</html>
